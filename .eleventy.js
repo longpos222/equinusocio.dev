@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const htmlMinTransform = require('./utils/transforms/htmlmin.js')
 const contentParser = require('./utils/transforms/contentParser.js')

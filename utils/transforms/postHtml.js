@@ -12,7 +12,7 @@ module.exports = function(content, outputPath) {
       .process(content, { sync: true })
       .html
 
-      return result
+    return result
   }
   return content
 }

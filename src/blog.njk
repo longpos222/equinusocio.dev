@@ -4,15 +4,15 @@ title: Blog
 ---
 {% from "postItem.njk" import postItem %}
 
-{% set postList = collections.posts %}
-{% if collections.posts.length %}
+{% set postList = posts %}
+{% if postList.length %}
   <section css-module="PostList">
     <ol reversed>
       {% for item in postList %}
         {% if not loop.first %}
           <hr/>
         {% endif %}
-        {{ postItem(item.url, item.data.title, item.date) }}
+        {{ postItem(item.slug, item.title, item.date) }}
       {% endfor %}
     </ol>
   </section>
