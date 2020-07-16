@@ -1,9 +1,9 @@
 {% extends 'layouts/base.njk' %}
 
 {% block content %}
-  <main tabindex="-1" class="BaseLayout" data-display="grid">
-    <section class="BaseLayout__LeftSide">
-      <div class="BaseLayout__Sticker">
+  <main tabindex="-1" style="--padding:32px 16px; --padding-sm:40px 64px; --max-w-sm:1440px; --margin-sm:0 auto; --display:grid; --grid-template-c-md:45% 1fr;">
+    <section style="--margin-b:80px; --margin-b:80px; --padding-l:24px; --padding-r:24px; --padding-l-sm:0; --margin-b-md:0">
+      <div style="--position-md:sticky; --top-md:40px; --padding-r-md:40px">
         {% include "header.njk" %}
         {% if title %}
           <h1>{{ title }}</h1>
@@ -11,7 +11,7 @@
         {% block leftContent %}{% endblock leftContent %}
       </div>
     </section>
-    <section class="BaseLayout__RightSide">
+    <section style="--padding-l-md:24px;">
       {% block rightContent %}{% endblock rightContent %}
     </section>
   </main>

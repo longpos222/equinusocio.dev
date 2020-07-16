@@ -1,24 +1,25 @@
-<header class="Header">
-    <nav class="Header__Navigation">
-      <a href="/" class="Header__Logo">
+<header style="--display:flex; --padding-b:40px; --margin-b-md:48px">
+    <nav style="--display:grid; --grid-auto-f:column dense; --align-i:center; --grid-g:32px; --margin-r:24px;">
+      <a href="/" style="--display:inline-flex; --min-w:32px;">
         <img src="/images/logo.png" alt="Home" width="32" height="32" />
       </a>
       {% if navigation.items %}
         {% for item in navigation.items %}
-          {% set isCurrent = '' %}
+          {% set isCurrent = 'style="--color:var(--navigation-links-color); --color-hover:var(--contrast-color); --font-s:1.13rem; --text-d:none;"' %}
           {% set relExternal = '' %}
 
           {% if item.external %}
             {% set relExternal = ' rel="external noopener noreferrer" target="_blank"' %}
           {% endif %}
           {% if page.url == item.url %}
-            {% set isCurrent = ' aria-current="page"' %}
+            {% set isCurrent = 'style="--color:var(--accent-color); --color-hover:var(--contrast-color); --font-s:1.13rem; --text-d:none;" aria-current="page"' %}
           {% endif %}
           <a href="{{ item.url }}"{{ relExternal | safe }}{{ isCurrent | safe }}>
             <b>{{ item.text }}</b>
           </a>
         {% endfor %}
       {% endif %}
+      <span style="--height-sm:3px; --bg-c-sm:var(--header-rule-color); --transition-sm:background-color 80ms; --flex-g-sm:1; --width-sm:72px; --display-sm:block"></span>
     </nav>
     {% include "./theme-switcher.njk" %}
 </header>

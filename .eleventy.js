@@ -32,6 +32,7 @@ module.exports = function(eleventyConfig) {
     './static': '.'
   })
   eleventyConfig.addPassthroughCopy(`./src/assets/css/${siteConfig.syntaxTheme}`)
+  eleventyConfig.addPassthroughCopy(`./src/assets/css/utils.css`)
   eleventyConfig.addPassthroughCopy({
     bundle: 'assets'
   })
