@@ -64,7 +64,7 @@ module.exports = function(value, outputPath) {
      */
     const articleHeadings = [
       ...document.querySelectorAll(
-        'article h2, article h3, article h4, article h5, article h6'
+        '.PostContent h2, .PostContent h3, .PostContent h4, .PostContent h5, .PostContent h6'
       ),
     ]
     if (articleHeadings.length) {

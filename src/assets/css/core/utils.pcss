@@ -18,3 +18,20 @@
   margin-left: calc(50%);
   transform: translateX(-50%);
 }
+
+.FadeIn {
+  animation: fadeIn 1 800ms ease-out;
+  animation-fill-mode: backwards;
+  animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
