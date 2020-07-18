@@ -7,9 +7,9 @@ module.exports = {
   },
   utilities: {
     ...utilities,
-    'grid-auto-f': {
-      type: 'responsive',
-      property: 'grid-auto-flow'
+    'list-s': {
+      type: 'standard',
+      property: 'list-style'
     }
   },
 };

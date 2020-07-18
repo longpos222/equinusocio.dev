@@ -963,10 +963,10 @@
     serialize-to-js "3.1.1"
     what-input "5.2.10"
 
-"@native-elements/funky@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@native-elements/funky/-/funky-0.1.7.tgz#d27ce3a37360c965f3d407cc9d5a501aae84462c"
-  integrity sha512-mNJkD321tgjANKjQUcswujBdCekj2HYd0ITKo6uabwdckf7lJeEHMYjZ3cacSWMiC9eMI8WD4eT+KnZ+JcozjQ==
+"@native-elements/funky@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@native-elements/funky/-/funky-0.1.8.tgz#06d09f5ea43646cd57dd46e94634b213a0a4066f"
+  integrity sha512-qYSIhOswMWxBSDFX1yvyO7kfR9UsmzRo9x47d8EJF+IrJcChEmIrGCtwY/BcWUVpDKRrHq7VhX2BxdtzWZGB3Q==
   dependencies:
     "@size-limit/preset-small-lib" "4.5.4"
     clean-css "4.2.3"

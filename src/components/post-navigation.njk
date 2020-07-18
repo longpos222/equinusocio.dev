@@ -1,17 +1,17 @@
 {% macro postNavigation(prev, next) %}
-  <nav class="PostNavigation">
+  <nav style="--display:grid; --margin-t:80px; --grid-g:32px; --grid-template-c:repeat(auto-fit, minmax(140px, 1fr))">
     {% if prev %}
-      <a class="PostNavigation__Item" href="{{ prev.url }}">
-        <svg width="24" height="24" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor" stroke-miterlimit="10"><path d="M22 12H2M9 19l-7-7 7-7"/></g></svg>
+      <a class="PostNavigation__Item" style="--padding:16px; --radius:8px; --border:2px solid var(--post-navigation-border-color); --display:flex; --align-i:center; --justify-c:flex-start; --text-d:none;" href="{{ prev.url }}">
+        <svg style="--margin-r:16px" width="24" height="24" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor" stroke-miterlimit="10"><path d="M22 12H2M9 19l-7-7 7-7"/></g></svg>
         <b>Previous story</b>
         <br />
         {# <small>{{ prev.data.title }}</small> #}
       </a>
     {% endif %}
     {% if next %}
-      <a class="PostNavigation__Item" href="{{ next.url }}">
+      <a class="PostNavigation__Item" style="--padding:16px; --radius:8px; --border:2px solid var(--post-navigation-border-color); --display:flex; --align-i:center; --justify-c:flex-start; --text-d:none; --text-a:end; --justify-c:flex-end;" href="{{ next.url }}">
         <b>Next story</b>
-        <svg width="24" height="24" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor" stroke-miterlimit="10"><path d="M2 12h20M15 5l7 7-7 7"/></g></svg>
+        <svg style="--margin-l:16px; --direction: 10px;" width="24" height="24" viewBox="0 0 24 24"><g stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" stroke="currentColor" stroke-miterlimit="10"><path d="M2 12h20M15 5l7 7-7 7"/></g></svg>
         <br />
         {# <small>{{ next.data.title }}</small> #}
       </a>
